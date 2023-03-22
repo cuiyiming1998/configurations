@@ -111,6 +111,11 @@ function dir() {
   mkdir $1 && cd $1
 }
 
+# Clone to ~/w and cd to it
+function clonew() {
+  w && gcl "$@" && cd ~2 && code .
+}
+
 # Clone to ~/o and cd to it
 function cloneo() {
   o && gcl "$@" && cd ~2 && code .
