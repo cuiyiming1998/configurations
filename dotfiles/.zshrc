@@ -55,9 +55,7 @@ alias d='nr dev'
 alias b='nr build'
 alias bw='nr build --watch'
 alias t='nr test'
-alias w='nr watch'
 alias p='nr play'
-alias c='nr typecheck'
 alias tu='nr test -u'
 alias tw='nr test -watch'
 alias lint='nr lint'
@@ -67,7 +65,8 @@ alias lintf='nr lint --fix'
 # Git
 # -------------------------------- #
 alias gs='git status'
-alias gcl='git clone'
+alias gcr='gh repo create'
+alias gcl='gh repo clone'
 alias gp='git push'
 alias gpl='git pull'
 alias gplr='git pull --rebase'
@@ -104,7 +103,7 @@ function f() {
 }
 
 function w() {
-  cd ~/o/$1
+  cd ~/w/$1
 }
 
 # mkdir and cd to it
@@ -114,15 +113,15 @@ function dir() {
 
 # Clone to ~/o and cd to it
 function cloneo() {
-  o && clone "$@" && code . && cd ~2
+  o && gcl "$@" && cd ~2 && code .
 }
 # Clone to ~/f and cd to it
 function clonef() {
-  f && clone "$@" && code . && cd ~2
+  f && gcl "$@" && cd ~2 && code .
 }
 # Clone to ~/s and cd to it
 function clones() {
-  s && clone "$@" && code . && cd ~2
+  s && gcl "$@" && cd ~2 && code .
 }
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
