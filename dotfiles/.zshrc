@@ -111,22 +111,30 @@ function dir() {
   mkdir $1 && cd $1
 }
 
+function clone() {
+  if [[ -z $2 ]] then
+    gcl "$@" && cd "$(basename "$1" .git)"
+  else
+    gcl "$@" && cd "$2"
+  fi
+}
+
 # Clone to ~/w and cd to it
 function clonew() {
-  w && gcl "$@" && cd ~2 && code .
+  w && clone "$@" && code . && cd ~2
 }
 
 # Clone to ~/o and cd to it
 function cloneo() {
-  o && gcl "$@" && cd ~2 && code .
+  o && clone "$@" && code . && cd ~2
 }
 # Clone to ~/f and cd to it
 function clonef() {
-  f && gcl "$@" && cd ~2 && code .
+  f && clone "$@" && code . && cd ~2
 }
 # Clone to ~/s and cd to it
 function clones() {
-  s && gcl "$@" && cd ~2 && code .
+  s && clone "$@" && code . && cd ~2
 }
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
