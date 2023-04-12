@@ -50,7 +50,7 @@ alias zj='zellij'
 # Node Package Manager
 # -------------------------------- #
 # https://github.com/antfu/ni
-alias s='nr start'
+alias st='nr start'
 alias d='nr dev'
 alias b='nr build'
 alias bw='nr build --watch'
