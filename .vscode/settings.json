@@ -17,10 +17,11 @@
   "editor.tabCompletion": "on",
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.smoothScrolling": true,
-  "editor.fontFamily": "'Input', 'Fira Code', 'JetBrains Mono'",
-  "editor.fontSize": 19,
+  "editor.fontFamily": "'Fira Code', 'Input', 'JetBrains Mono'",
+  "editor.fontWeight": "300",
+  "editor.fontSize": 21,
   "editor.fontLigatures": true,
-  "editor.lineHeight": 32,
+  // "editor.lineHeight": 32,
   "window.autoDetectColorScheme": false,
   "workbench.preferredDarkColorTheme": "Vitesse Dark",
   "workbench.preferredLightColorTheme": "Vitesse Light",
@@ -30,6 +31,11 @@
       "keywords": {
         "fontStyle": ""
       },
+    },
+    "[Gruvbox Material Dark]": {
+      "comments": {
+        "fontStyle": "",
+      }
     },
     "[Material Theme]": {
       "comments": {
@@ -85,7 +91,7 @@
     "strings": true,
   },
   "editor.inlineSuggest.enabled": true,
-  "editor.accessibilitySupport": "off",
+  "editor.accessibilitySupport": "on",
   "editor.suggest.snippetsPreventQuickSuggestions": false,
   "editor.accessibilityPageSize": 18,
   "editor.minimap.enabled": false,
@@ -102,11 +108,6 @@
     "**/.DS_Store": true,
     "**/tmp": true,
     "**/bower_components": true,
-  },
-
-  // ESLint config: https://github.com/antfu/eslint-config
-  "eslint.codeAction.showDocumentation": {
-    "enable": true
   },
   "eslint.enable": true,
   "eslint.quiet": true,
@@ -132,6 +133,7 @@
   "cSpell.language": "en,en-US",
   "css.lint.hexColorLength": "ignore",
   "cSpell.userWords": [
+    "ahooks",
     "alipay",
     "aliyun",
     "antd",
@@ -159,6 +161,7 @@
     "mockjs",
     "nocheck",
     "nums",
+    "Nuxt",
     "pinia",
     "PIXI",
     "postorder",
@@ -792,6 +795,7 @@
     ],
 
   // Extensions
+  "vue.inlayHints.optionsWrapper": false,
   "autoimport.showNotifications": true,
   "autoimport.filesToScan": "**/*.{ts,tsx,js,jsx}",
   "autoimport.useSemiColon": false,
@@ -954,12 +958,19 @@
     "vue",
     "react"
   ],
-  "workbench.iconTheme": "vscode-icons",
+  "workbench.iconTheme": "vscode-icons-mac",
   "markdown-preview-enhanced.previewTheme": "github-dark.css",
-  "workbench.colorTheme": "Vitesse Dark",
   "breadcrumbs.filePath": "off",
-  "workbench.editor.showTabs": false,
   "errorLens.excludeBySource": [
-    "ts(6059)"
+    "ts(6059)",
+    "ts(2416)",
+    "ts(2322)"
   ],
+  "explorer.confirmDragAndDrop": false,
+  "workbench.editor.showTabs": false,
+  "gitlens.views.commitDetails.files.layout": "tree",
+  "workbench.colorTheme": "Vitesse Dark",
+  "workbench.productIconTheme": "icons-carbon",
+  "screencastMode.fontSize": 20,
+  "screencastMode.keyboardOverlayTimeout": 600,
 }
