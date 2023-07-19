@@ -12,17 +12,17 @@
     "source.fixAll.eslint": true, // this allows ESLint to auto fix on save
     "source.organizeImports": false
   },
-  "editor.detectIndentation": false,
   "editor.guides.indentation": false,
   "editor.tabCompletion": "on",
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.smoothScrolling": true,
-  "editor.fontFamily": "'Fira Code', 'Input', 'JetBrains Mono'",
-  "editor.fontWeight": "300",
-  "editor.fontSize": 21,
+  "editor.fontFamily": "'Fira Code', 'Input Mono', 'JetBrains Mono', 'Cascadia Code'",
+  "editor.fontWeight": "400",
+  "editor.fontSize": 19,
   "editor.fontLigatures": true,
   // "editor.lineHeight": 32,
   "window.autoDetectColorScheme": false,
+  "workbench.fontAliasing": "auto",
   "workbench.preferredDarkColorTheme": "Vitesse Dark",
   "workbench.preferredLightColorTheme": "Vitesse Light",
 
@@ -37,12 +37,22 @@
         "fontStyle": "",
       }
     },
+    "[One Monokai]": {
+      "keywords": {
+        "fontStyle": ""
+      },
+      "variables": {
+        "fontStyle": ""
+      },
+      "functions":  {
+        "fontStyle": ""
+      },
+    },
     "[Material Theme]": {
       "comments": {
         "fontStyle": "",
         "foreground": "#229977"
       },
-      // "variables": "#f00", // 变量名
       "keywords": {
         "fontStyle": ""
       }
@@ -79,7 +89,6 @@
         "fontStyle": "",
         "foreground": "#229977"
       },
-      // "variables": "#f00", // 变量名
       "keywords": {
         "fontStyle": ""
       }
@@ -91,7 +100,7 @@
     "strings": true,
   },
   "editor.inlineSuggest.enabled": true,
-  "editor.accessibilitySupport": "on",
+  "editor.accessibilitySupport": "off",
   "editor.suggest.snippetsPreventQuickSuggestions": false,
   "editor.accessibilityPageSize": 18,
   "editor.minimap.enabled": false,
@@ -148,8 +157,10 @@
     "cuiyiming",
     "daterange",
     "datetimerange",
+    "demi",
     "doption",
     "Echarts",
+    "Hicky",
     "hoverable",
     "iconfont",
     "ionicons",
@@ -875,8 +886,8 @@
   },
   "terminal.integrated.gpuAcceleration": "off",
   "terminal.external.osxExec": "iTerm.app",
-  "terminal.integrated.fontFamily": "Input",
-  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.fontFamily": "Fira Code",
+  "terminal.integrated.fontSize": 17,
 
   // FileNesting
   // https://github.com/antfu/vscode-file-nesting-config
@@ -958,7 +969,7 @@
     "vue",
     "react"
   ],
-  "workbench.iconTheme": "vscode-icons-mac",
+  "workbench.iconTheme": "vscode-great-icons",
   "markdown-preview-enhanced.previewTheme": "github-dark.css",
   "breadcrumbs.filePath": "off",
   "errorLens.excludeBySource": [
@@ -967,10 +978,13 @@
     "ts(2322)"
   ],
   "explorer.confirmDragAndDrop": false,
-  "workbench.editor.showTabs": false,
   "gitlens.views.commitDetails.files.layout": "tree",
-  "workbench.colorTheme": "Vitesse Dark",
   "workbench.productIconTheme": "icons-carbon",
   "screencastMode.fontSize": 20,
   "screencastMode.keyboardOverlayTimeout": 600,
+  "workbench.editor.showTabs": false,
+  "markdownlint.config": {
+    "MD025": false
+  },
+  "workbench.colorTheme": "Evondev Dracula Darker Contrast",
 }
