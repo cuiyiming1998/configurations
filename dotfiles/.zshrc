@@ -42,6 +42,11 @@ source /opt/homebrew/opt/zsh-vi-mode/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
 alias lso='lsof -i'
 
 # -------------------------------- #
+# Neofetch
+# -------------------------------- #
+alias nf='neofetch'
+
+# -------------------------------- #
 # zellij
 # -------------------------------- #
 alias zj='zellij'
