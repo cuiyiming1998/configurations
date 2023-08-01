@@ -228,5 +228,34 @@
   {
     "key": "shift+cmd+o",
     "command": "-workbench.action.gotoSymbol"
+  },
+  {
+    "key": "alt+cmd+o o",
+    "command": "workbench.action.toggleTabsVisibility"
+  },
+  {
+    "key": "f2",
+    "command": "editor.action.rename",
+    "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "f2",
+    "command": "-editor.action.rename",
+    "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+f2",
+    "command": "abracadabra.renameSymbol",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "f2",
+    "command": "-abracadabra.renameSymbol",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "space",
+    "command": "vspacecode.space",
+    "when": "sideBarFocus && !inputFocus && !whichkeyActive"
   }
 ]
