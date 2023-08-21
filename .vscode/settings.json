@@ -16,7 +16,7 @@
   "editor.tabCompletion": "on",
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.smoothScrolling": true,
-  "editor.fontFamily": "'Fira Code', 'Input Mono', 'JetBrains Mono', 'Cascadia Code'",
+  "editor.fontFamily": "'JetBrains Mono', 'Fira Code', 'Input Mono', 'Cascadia Code', Courier New",
   "editor.fontWeight": "normal",
   "editor.fontSize": 18,
   "editor.fontLigatures": true,
@@ -24,74 +24,136 @@
   "workbench.fontAliasing": "default",
   "workbench.preferredDarkColorTheme": "Vitesse Dark",
   "workbench.preferredLightColorTheme": "Vitesse Light",
-
+  "workbench.sideBar.location": "right",
   "editor.tokenColorCustomizations": {
-    "[monokai-charcoal]": {
-      "keywords": {
-        "fontStyle": ""
-      },
-    },
-    "[Gruvbox Material Dark]": {
-      "comments": {
-        "fontStyle": "",
+    "textMateRules": [
+      {
+        "scope": [
+          "comment",
+          "comment.block",
+          "comment.block.documentation",
+          "comment.line",
+          "constant",
+          "constant.character",
+          "constant.character.escape",
+          "constant.numeric",
+          "constant.numeric.integer",
+          "constant.numeric.float",
+          "constant.numeric.hex",
+          "constant.numeric.octal",
+          "constant.other",
+          "constant.regexp",
+          "constant.rgb-value",
+          "emphasis",
+          "entity",
+          "entity.name",
+          "entity.name.class",
+          "entity.name.function",
+          "entity.name.method",
+          "entity.name.section",
+          "entity.name.selector",
+          "entity.name.tag",
+          "entity.name.type",
+          "entity.other",
+          "entity.other.attribute-name",
+          "entity.other.inherited-class",
+          "invalid",
+          "invalid.deprecated",
+          "invalid.illegal",
+          "keyword",
+          "keyword.control",
+          "keyword.operator",
+          "keyword.operator.new",
+          "keyword.operator.assignment",
+          "keyword.operator.arithmetic",
+          "keyword.operator.logical",
+          "keyword.other",
+          "markup",
+          "markup.bold",
+          "markup.changed",
+          "markup.deleted",
+          "markup.heading",
+          "markup.inline.raw",
+          "markup.inserted",
+          "markup.italic",
+          "markup.list",
+          "markup.list.numbered",
+          "markup.list.unnumbered",
+          "markup.other",
+          "markup.quote",
+          "markup.raw",
+          "markup.underline",
+          "markup.underline.link",
+          "meta",
+          "meta.block",
+          "meta.cast",
+          "meta.class",
+          "meta.function",
+          "meta.function-call",
+          "meta.preprocessor",
+          "meta.return-type",
+          "meta.selector",
+          "meta.tag",
+          "meta.type.annotation",
+          "meta.type",
+          "punctuation.definition.string.begin",
+          "punctuation.definition.string.end",
+          "punctuation.separator",
+          "punctuation.separator.continuation",
+          "punctuation.terminator",
+          "storage",
+          "storage.modifier",
+          "storage.type",
+          "string",
+          "string.interpolated",
+          "string.other",
+          "string.quoted",
+          "string.quoted.double",
+          "string.quoted.other",
+          "string.quoted.single",
+          "string.quoted.triple",
+          "string.regexp",
+          "string.unquoted",
+          "strong",
+          "support",
+          "support.class",
+          "support.constant",
+          "support.function",
+          "support.other",
+          "support.type",
+          "support.type.property-name",
+          "support.variable",
+          "variable",
+          "variable.language",
+          "variable.name",
+          "variable.other",
+          "variable.other.readwrite",
+          "variable.parameter",
+          "variable.other.object",
+        ],
+        "settings": {
+          "fontStyle": "",
+        }
       }
+    ],
+    "keywords": {
+      "fontStyle": "",
     },
-    "[One Monokai]": {
-      "keywords": {
-        "fontStyle": ""
-      },
-      "variables": {
-        "fontStyle": ""
-      },
-      "functions":  {
-        "fontStyle": ""
-      },
+    "functions": {
+      "fontStyle": "",
     },
-    "[Material Theme]": {
-      "comments": {
-        "fontStyle": "",
-        "foreground": "#229977"
-      },
-      "keywords": {
-        "fontStyle": ""
-      }
-    },
-    "[Evondev Dracula Darker Contrast]": {
-      "types": {
-        "fontStyle": ""
-      },
-      "comments": {
-        "fontStyle": "",
-      },
-      "keywords": {
-        "fontStyle": ""
-      }
-    },
-    "[Ayu Dark]": {
-      "comments": {
-        "fontStyle": "",
-      },
-      "keywords": {
-        "fontStyle": ""
-      }
-    },
-    "[Ayu Mirage]": {
-      "comments": {
-        "fontStyle": "",
-      },
-      "keywords": {
-        "fontStyle": ""
-      }
-    },
-    "[Material Theme Darker]": {
-      "comments": {
-        "fontStyle": "",
-        "foreground": "#229977"
-      },
-      "keywords": {
-        "fontStyle": ""
-      }
-    }
+    // "[Material Theme]": {
+    //   "comments": {
+    //     "fontStyle": "",
+    //     "foreground": "#229977"
+    //   },
+    // },
+    // "[Material Theme Darker]": {
+    //   "comments": {
+    //     "fontStyle": "",
+    //     "foreground": "#229977"
+    //   },
+    // }
   },
   "editor.quickSuggestions": {
     "other": true,
@@ -102,12 +164,12 @@
   "editor.accessibilitySupport": "off",
   "editor.suggest.snippetsPreventQuickSuggestions": false,
   "editor.accessibilityPageSize": 18,
-"editor.minimap.enabled": false,
+  "editor.minimap.enabled": false,
   "typescript.updateImportsOnFileMove.enabled": "always",
   "diffEditor.ignoreTrimWhitespace": false,
   "git.enableSmartCommit": true,
-"git.ignoreMissingGitWarning": true,
-"git.path": "/usr/bin/git",
+  "git.ignoreMissingGitWarning": true,
+  "git.path": "/usr/bin/git",
   "files.exclude": {
     "**/.git": true,
     "**/.svn": true,
@@ -200,7 +262,6 @@
     "Windicss"
   ],
   "gitlens.codeLens.authors.enabled": false,
-  "gitlens.codeLens.enabled": false,
   "gitlens.codeLens.recentChange.enabled": false,
   "gitlens.menus": {
     "editor": {
@@ -245,7 +306,6 @@
       "stash": true
     }
   },
-
   "iconify.annotations": true,
   "iconify.inplace": true,
   "volar.autoCompleteRefs": false,
@@ -261,550 +321,548 @@
   "[astro]": {
     "editor.defaultFormatter": "astro-build.astro-vscode"
   },
-
-    // VIM
-    "vim.easymotion": true,
-    "vim.leader": "<Space>",
-    "vim.sneak": true,
-    "vim.leap.enable": true,
-    "vim.leap.showMarkerPosition": "before",
-    "vim.leap.caseSensitive": false,
-    "vim.leap.bidirectionalSearch": true,
-    "vim.foldfix": true,
-    "vim.useSystemClipboard": false,
-    "vim.visualModeKeyBindings": [
-      {
-        "before": [
-          "H"
-        ],
-        "after": [
-          "^"
-        ]
-      },
-      {
-        "before": [
-          "L"
-        ],
-        "after": [
-          "g",
-          "_"
-        ]
-      },
-      {
-        "before": [
-          "J"
-        ],
-        "after": [
-          "5",
-          "j"
-        ]
-      },
-      {
-        "before": [
-          "K"
-        ],
-        "after": [
-          "5",
-          "k"
-        ]
-      },
-      {
-        "before": [
-          "a",
-          "i"
-        ],
-        "after": [
-          "a",
-          "I"
-        ]
-      }
-    ],
-    "vim.visualModeKeyBindingsNonRecursive": [
-      {
-        "before": [
-          "<space>",
-          ";"
-        ],
-        "commands": [
-          "vspacecode.space"
-        ]
-      },
-      {
-        "before": [
-          "<Leader>",
-          "r",
-          "f"
-        ],
-        "commands": [
-          {
-            "command": "editor.action.refactor",
-            "args": {
-              "kind": "refactor.extract.function"
-            }
+  // VIM
+  "vim.easymotion": true,
+  "vim.leader": "<Space>",
+  "vim.sneak": true,
+  "vim.leap.enable": true,
+  "vim.leap.showMarkerPosition": "before",
+  "vim.leap.caseSensitive": false,
+  "vim.leap.bidirectionalSearch": true,
+  "vim.foldfix": true,
+  "vim.useSystemClipboard": false,
+  "vim.visualModeKeyBindings": [
+    {
+      "before": [
+        "H"
+      ],
+      "after": [
+        "^"
+      ]
+    },
+    {
+      "before": [
+        "L"
+      ],
+      "after": [
+        "g",
+        "_"
+      ]
+    },
+    {
+      "before": [
+        "J"
+      ],
+      "after": [
+        "5",
+        "j"
+      ]
+    },
+    {
+      "before": [
+        "K"
+      ],
+      "after": [
+        "5",
+        "k"
+      ]
+    },
+    {
+      "before": [
+        "a",
+        "i"
+      ],
+      "after": [
+        "a",
+        "I"
+      ]
+    }
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "<space>",
+        ";"
+      ],
+      "commands": [
+        "vspacecode.space"
+      ]
+    },
+    {
+      "before": [
+        "<Leader>",
+        "r",
+        "f"
+      ],
+      "commands": [
+        {
+          "command": "editor.action.refactor",
+          "args": {
+            "kind": "refactor.extract.function"
           }
-        ]
-      },
-      {
-        "before": [
-          "<Leader>",
-          "r",
-          "e"
-        ],
-        "commands": [
-          "abracadabra.extract"
-        ]
-      },
-      {
-        "before": [
-          "f"
-        ],
-        "after": [
-          "s"
-        ]
-      },
-      {
-        "before": [
-          "<Leader>",
-          "j"
-        ],
-        "after": [
-          "J"
-        ]
-      },
-      {
-        "before": [
-          "<Leader>",
-          "f",
-          "d"
-        ],
-        "commands": [
-          "editor.action.formatSelection"
-        ]
-      },
-      {
-        "before": [
-          "<Leader>",
-          "/"
-        ],
-        "after": [
-          "y",
-          "/",
-          "<C-r>",
-          "0",
-          "<Enter>"
-        ]
-      }
-    ],
-    "vim.operatorPendingModeKeyBindingsNonRecursive": [
-      {
-        "before": [
-          "f"
-        ],
-        "after": [
-          "z"
-        ]
-      },
-      {
-        "before": [
-          "F"
-        ],
-        "after": [
-          "Z"
-        ]
-      }
-    ],
-    "vim.operatorPendingModeKeyBindings": [
-      {
-        "before": [
-          "H"
-        ],
-        "after": [
-          "^"
-        ]
-      },
-      {
-        "before": [
-          "L"
-        ],
-        "after": [
-          "g",
-          "_"
-        ]
-      },
-      {
-        "before": [
-          "a",
-          "i"
-        ],
-        "after": [
-          "a",
-          "I"
-        ]
-      }
-    ],
-    "vim.normalModeKeyBindings": [
-      {
-        "before": [
-          "<Leader>",
-          "u"
-        ],
-        "after": [
-          "~"
-        ]
-      },
-      {
-        "before": [
-          "H"
-        ],
-        "after": [
-          "^"
-        ]
-      },
-      {
-        "before": [
-          "L"
-        ],
-        "after": [
-          "g",
-          "_"
-        ]
-      },
-      {
-        "before": [
-          "J"
-        ],
-        "after": [
-          "5",
-          "j"
-        ]
-      },
-      {
-        "before": [
-          "K"
-        ],
-        "after": [
-          "5",
-          "k"
-        ]
-      },
-      {
-        "before": [
-          "Enter"
-        ],
-        "after": [
-          "o",
-          "Esc"
-        ]
-      }
-    ],
-    "vim.normalModeKeyBindingsNonRecursive": [
-      {
-        "before": [
-          "<Leader>",
-          "i"
-        ],
-        "after": [
-          "b",
-          "i"
-        ]
-      },
-      {
-        "before": [
-          "<Leader>",
-          "a"
-        ],
-        "after": [
-          "e",
-          "a"
-        ]
-      },
-      {
-        "before": [
-          "<Leader>",
-          "d",
-          "f"
-        ],
-        "commands": [
-          "delete-function.deleteFunction"
-        ]
-      },
-      {
-        "before": [
-          "<Leader>",
-          "f",
-          "f"
-        ],
-        "commands": [
-          "hocusPocus.createFunction"
-        ]
-      },
-      {
-        "before": [
-          "<Leader>",
-          "v",
-          "v"
-        ],
-        "commands": [
-          "hocusPocus.createVariable"
-        ]
-      },
-      {
-        "before": [
-          "<Leader>",
-          "["
-        ],
-        "commands": [
-          "editor.toggleFold"
-        ]
-      },
-      {
-        "before": [
-          "<Leader>",
-          "n",
-          "f"
-        ],
-        "commands": [
-          "explorer.newFile"
-        ]
-      },
-      {
-        "before": [
-          "<Leader>",
-          "n",
-          "d"
-        ],
-        "commands": [
-          "explorer.newFolder"
-        ]
-      },
-      {
-        "before": [
-          "<Leader>",
-          "r",
-          "n"
-        ],
-        "commands": [
-          {
-            "command": "editor.action.rename",
-          }
-        ]
-      },
-      {
-        "before": [
-          "<Leader>",
-          "f",
-          "d"
-        ],
-        "commands": [
-          "editor.action.formatDocument"
-        ]
-      },
-      {
-        "before": [
-          "<space>",
-          ";"
-        ],
-        "commands": [
-          "vspacecode.space"
-        ]
-      },
-      {
-        "before": [
-          "<Leader>",
-          "f",
-          "f"
-        ],
-        "commands": [
-          "hocusPocus.createFunction"
-        ]
-      },
-      {
-        "before": [
-          "<Leader>",
-          "v",
-          "v"
-        ],
-        "commands": [
-          "hocusPocus.createVariable"
-        ]
-      },
-      {
-        "before": [
-          "<Leader>",
-          "g",
-          "c",
-          "l"
-        ],
-        "commands": [
-          "git.clean"
-        ]
-      },
-      {
-        "before": [
-          "<Leader>",
-          "g",
-          "d",
-          "f"
-        ],
-        "commands": [
-          "git.openChange"
-        ]
-      },
-      {
-        "before": [
-          "<Leader>",
-          "g",
-          "c"
-        ],
-        "commands": [
-          "git.commit"
-        ]
-      },
-      {
-        "before": [
-          "<Leader>",
-          "g",
-          "g"
-        ],
-        "commands": [
-          "workbench.view.scm"
-        ]
-      },
-      {
-        "before": [
-          "<Leader>",
-          "g",
-          "s"
-        ],
-        "commands": [
-          "git.stage"
-        ]
-      },
-      {
-        "before": [
-          "<Leader>",
-          "g",
-          "u"
-        ],
-        "commands": [
-          "git.unstage"
-        ]
-      },
-      {
-        "before": [
-          "<Leader>",
-          "n",
-          "d"
-        ],
-        "commands": [
-          "explorer.newFolder"
-        ]
-      },
-      {
-        "before": [
-          "<Leader>",
-          "n",
-          "f"
-        ],
-        "commands": [
-          "explorer.newFile"
-        ]
-      },
-      {
-        "before": [
-          "<Leader>",
-          "f",
-          "d"
-        ],
-        "commands": [
-          "editor.action.formatDocument"
-        ]
-      },
-      // {
-      //   "before": [
-      //     "<Leader>",
-      //     "r",
-      //     "n"
-      //   ],
-      //   "commands": [
-      //     "abracadabra.renameSymbol"
-      //   ]
-      // },
-      {
-        "before": [
-          "<Leader>",
-          "/"
-        ],
-        "after": [
-          "/",
-          "<C-r>",
-          "0",
-          "<Enter>"
-        ]
-      },
-      {
-        "before": [
-          "J"
-        ],
-        "after": [
-          "5",
-          "j"
-        ]
-      },
-      {
-        "before": [
-          "K"
-        ],
-        "after": [
-          "5",
-          "k"
-        ]
-      },
-      {
-        "before": [
-          "<Leader>",
-          "j"
-        ],
-        "after": [
-          "J"
-        ]
-      },
-      {
-        "before": [
-          "f"
-        ],
-        "after": [
-          "s"
-        ]
-      },
-      {
-        "before": [
-          "F"
-        ],
-        "after": [
-          "S"
-        ]
-      },
-      {
-        "before": [
-          "s"
-        ],
-        "after": [
-          "c",
-          "l"
-        ]
-      },
-      {
-        "before": [
-          "S"
-        ],
-        "after": [
-          "^",
-          "C"
-        ]
-      }
-    ],
-
+        }
+      ]
+    },
+    {
+      "before": [
+        "<Leader>",
+        "r",
+        "e"
+      ],
+      "commands": [
+        "abracadabra.extract"
+      ]
+    },
+    {
+      "before": [
+        "f"
+      ],
+      "after": [
+        "s"
+      ]
+    },
+    {
+      "before": [
+        "<Leader>",
+        "j"
+      ],
+      "after": [
+        "J"
+      ]
+    },
+    {
+      "before": [
+        "<Leader>",
+        "f",
+        "d"
+      ],
+      "commands": [
+        "editor.action.formatSelection"
+      ]
+    },
+    {
+      "before": [
+        "<Leader>",
+        "/"
+      ],
+      "after": [
+        "y",
+        "/",
+        "<C-r>",
+        "0",
+        "<Enter>"
+      ]
+    }
+  ],
+  "vim.operatorPendingModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "f"
+      ],
+      "after": [
+        "z"
+      ]
+    },
+    {
+      "before": [
+        "F"
+      ],
+      "after": [
+        "Z"
+      ]
+    }
+  ],
+  "vim.operatorPendingModeKeyBindings": [
+    {
+      "before": [
+        "H"
+      ],
+      "after": [
+        "^"
+      ]
+    },
+    {
+      "before": [
+        "L"
+      ],
+      "after": [
+        "g",
+        "_"
+      ]
+    },
+    {
+      "before": [
+        "a",
+        "i"
+      ],
+      "after": [
+        "a",
+        "I"
+      ]
+    }
+  ],
+  "vim.normalModeKeyBindings": [
+    {
+      "before": [
+        "<Leader>",
+        "u"
+      ],
+      "after": [
+        "~"
+      ]
+    },
+    {
+      "before": [
+        "H"
+      ],
+      "after": [
+        "^"
+      ]
+    },
+    {
+      "before": [
+        "L"
+      ],
+      "after": [
+        "g",
+        "_"
+      ]
+    },
+    {
+      "before": [
+        "J"
+      ],
+      "after": [
+        "5",
+        "j"
+      ]
+    },
+    {
+      "before": [
+        "K"
+      ],
+      "after": [
+        "5",
+        "k"
+      ]
+    },
+    {
+      "before": [
+        "Enter"
+      ],
+      "after": [
+        "o",
+        "Esc"
+      ]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "<Leader>",
+        "i"
+      ],
+      "after": [
+        "b",
+        "i"
+      ]
+    },
+    {
+      "before": [
+        "<Leader>",
+        "a"
+      ],
+      "after": [
+        "e",
+        "a"
+      ]
+    },
+    {
+      "before": [
+        "<Leader>",
+        "d",
+        "f"
+      ],
+      "commands": [
+        "delete-function.deleteFunction"
+      ]
+    },
+    {
+      "before": [
+        "<Leader>",
+        "f",
+        "f"
+      ],
+      "commands": [
+        "hocusPocus.createFunction"
+      ]
+    },
+    {
+      "before": [
+        "<Leader>",
+        "v",
+        "v"
+      ],
+      "commands": [
+        "hocusPocus.createVariable"
+      ]
+    },
+    {
+      "before": [
+        "<Leader>",
+        "["
+      ],
+      "commands": [
+        "editor.toggleFold"
+      ]
+    },
+    {
+      "before": [
+        "<Leader>",
+        "n",
+        "f"
+      ],
+      "commands": [
+        "explorer.newFile"
+      ]
+    },
+    {
+      "before": [
+        "<Leader>",
+        "n",
+        "d"
+      ],
+      "commands": [
+        "explorer.newFolder"
+      ]
+    },
+    {
+      "before": [
+        "<Leader>",
+        "r",
+        "n"
+      ],
+      "commands": [
+        {
+          "command": "editor.action.rename",
+        }
+      ]
+    },
+    {
+      "before": [
+        "<Leader>",
+        "f",
+        "d"
+      ],
+      "commands": [
+        "editor.action.formatDocument"
+      ]
+    },
+    {
+      "before": [
+        "<space>",
+        ";"
+      ],
+      "commands": [
+        "vspacecode.space"
+      ]
+    },
+    {
+      "before": [
+        "<Leader>",
+        "f",
+        "f"
+      ],
+      "commands": [
+        "hocusPocus.createFunction"
+      ]
+    },
+    {
+      "before": [
+        "<Leader>",
+        "v",
+        "v"
+      ],
+      "commands": [
+        "hocusPocus.createVariable"
+      ]
+    },
+    {
+      "before": [
+        "<Leader>",
+        "g",
+        "c",
+        "l"
+      ],
+      "commands": [
+        "git.clean"
+      ]
+    },
+    {
+      "before": [
+        "<Leader>",
+        "g",
+        "d",
+        "f"
+      ],
+      "commands": [
+        "git.openChange"
+      ]
+    },
+    {
+      "before": [
+        "<Leader>",
+        "g",
+        "c"
+      ],
+      "commands": [
+        "git.commit"
+      ]
+    },
+    {
+      "before": [
+        "<Leader>",
+        "g",
+        "g"
+      ],
+      "commands": [
+        "workbench.view.scm"
+      ]
+    },
+    {
+      "before": [
+        "<Leader>",
+        "g",
+        "s"
+      ],
+      "commands": [
+        "git.stage"
+      ]
+    },
+    {
+      "before": [
+        "<Leader>",
+        "g",
+        "u"
+      ],
+      "commands": [
+        "git.unstage"
+      ]
+    },
+    {
+      "before": [
+        "<Leader>",
+        "n",
+        "d"
+      ],
+      "commands": [
+        "explorer.newFolder"
+      ]
+    },
+    {
+      "before": [
+        "<Leader>",
+        "n",
+        "f"
+      ],
+      "commands": [
+        "explorer.newFile"
+      ]
+    },
+    {
+      "before": [
+        "<Leader>",
+        "f",
+        "d"
+      ],
+      "commands": [
+        "editor.action.formatDocument"
+      ]
+    },
+    // {
+    //   "before": [
+    //     "<Leader>",
+    //     "r",
+    //     "n"
+    //   ],
+    //   "commands": [
+    //     "abracadabra.renameSymbol"
+    //   ]
+    // },
+    {
+      "before": [
+        "<Leader>",
+        "/"
+      ],
+      "after": [
+        "/",
+        "<C-r>",
+        "0",
+        "<Enter>"
+      ]
+    },
+    {
+      "before": [
+        "J"
+      ],
+      "after": [
+        "5",
+        "j"
+      ]
+    },
+    {
+      "before": [
+        "K"
+      ],
+      "after": [
+        "5",
+        "k"
+      ]
+    },
+    {
+      "before": [
+        "<Leader>",
+        "j"
+      ],
+      "after": [
+        "J"
+      ]
+    },
+    {
+      "before": [
+        "f"
+      ],
+      "after": [
+        "s"
+      ]
+    },
+    {
+      "before": [
+        "F"
+      ],
+      "after": [
+        "S"
+      ]
+    },
+    {
+      "before": [
+        "s"
+      ],
+      "after": [
+        "c",
+        "l"
+      ]
+    },
+    {
+      "before": [
+        "S"
+      ],
+      "after": [
+        "^",
+        "C"
+      ]
+    }
+  ],
   // Extensions
   "vue.inlayHints.optionsWrapper": false,
   "autoimport.showNotifications": true,
@@ -868,18 +926,25 @@
   "i18n-ally.displayLanguage": "en-US",
   "i18n-ally.sourceLanguage": "en-US",
   "i18n-ally.ignoredLocales": [],
-  "i18n-ally.localesPaths":["src/locale", "src/layout", "src/pages"],
-  "i18n-ally.enabledParsers": ["ts", "json"],
+  "i18n-ally.localesPaths": [
+    "src/locale",
+    "src/layout",
+    "src/pages"
+  ],
+  "i18n-ally.enabledParsers": [
+    "ts",
+    "json"
+  ],
   "i18n-ally.keystyle": "auto",
   "unocss.root": [
-    ".", "playground"
+    ".",
+    "playground"
   ],
   "fileNestingUpdater.autoUpdate": true,
   "fileNestingUpdater.autoUpdateInterval": 720,
   "fileNestingUpdater.promptOnAutoUpdate": true,
   "fileNestingUpdater.upstreamRepo": "antfu/vscode-file-nesting-config",
   "fileNestingUpdater.upstreamBranch": "main",
-
   // Others
   "terminal.integrated.env.osx": {
     "FIG_NEW_SESSION": "1"
@@ -888,7 +953,6 @@
   "terminal.external.osxExec": "iTerm.app",
   "terminal.integrated.fontFamily": "Fira Code",
   "terminal.integrated.fontSize": 17,
-
   // FileNesting
   // https://github.com/antfu/vscode-file-nesting-config
   "explorer.fileNesting.enabled": true,
@@ -975,7 +1039,7 @@
     "vue",
     "react"
   ],
-  "workbench.iconTheme": "vscode-jetbrains-icon-theme-2023",
+  "workbench.iconTheme": "vscode-jetbrains-icon-theme-2023-dark",
   "markdown-preview-enhanced.previewTheme": "github-dark.css",
   "breadcrumbs.filePath": "off",
   "errorLens.excludeBySource": [
@@ -992,5 +1056,11 @@
   "markdownlint.config": {
     "MD025": false
   },
-  "workbench.colorTheme": "Evondev Dracula Darker Contrast",
+  "Codegeex.OnlyKeyControl": true,
+  "gitlens.codeLens.enabled": false,
+  "gitlens.views.commits.files.layout": "list",
+  "git.confirmSync": false,
+  "window.commandCenter": true,
+  "workbench.layoutControl.enabled": false,
+  "workbench.colorTheme": "JetBrains Darcula Theme",
 }
