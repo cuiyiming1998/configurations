@@ -7,10 +7,11 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-export ZSH="/Users/mac/.oh-my-zsh"
-export GOPATH="/Users/mac/GoDev"
+export ZSH="/Users/young/.oh-my-zsh"
+export GOPATH="/Users/young/GoDev"
 export GOBIN="$GOPATH/bin"
 export all_proxy="http://127.0.0.1:1080"
+export NVM_NODEJS_ORG_MIRROR="http://nodejs.org/dist"
 
 # -------------------------------- #
 # theme
@@ -24,11 +25,9 @@ ZSH_DISABLE_COMPFIX=true
 # -------------------------------- #
 plugins=(
   git
-  zsh-syntax-highlighting
   zsh-autosuggestions
   copypath
   copyfile
-  macos
 )
 
 # https://ohmyz.sh/
@@ -36,7 +35,7 @@ source $ZSH/oh-my-zsh.sh
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
-source /opt/homebrew/opt/zsh-vi-mode/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
+# source /opt/homebrew/opt/zsh-vi-mode/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
 
 # lso
 alias lso='lsof -i'
@@ -143,6 +142,14 @@ function clones() {
   s && clone "$@" && code . && cd ~2
 }
 
+# proxy
+function resetP() {
+  export http_proxy=""
+  export https_proxy=""
+  export HTTP_PROXY=""
+  export HTTPS_PROXY=""
+}
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
@@ -150,9 +157,14 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
 # pnpm
-export PNPM_HOME="/Users/mac/Library/pnpm"
+export PNPM_HOME="/Users/young/Library/pnpm"
 export PATH="$PNPM_HOME:$PATH"
 # pnpm end
 
 # Fig post block. Keep at the bottom of this file.
-[[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
+[[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"source /Users/young/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /Users/young/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /Users/young/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /Users/young/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+. "$HOME/.local/bin/env"
