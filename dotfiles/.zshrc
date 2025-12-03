@@ -37,6 +37,11 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 # source /opt/homebrew/opt/zsh-vi-mode/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
 
+# -------------------------------- #
+# claude code
+# -------------------------------- #
+alias cl='claude'
+
 # lso
 alias lso='lsof -i'
 
@@ -168,3 +173,20 @@ source /Users/young/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /Users/young/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 . "$HOME/.local/bin/env"
+
+# Added by Windsurf
+export PATH="/Users/young/.codeium/windsurf/bin:$PATH"
+
+# Added by Windsurf
+export PATH="/Users/young/.codeium/windsurf/bin:$PATH"
+
+# Added by Windsurf
+export PATH="/Users/young/.codeium/windsurf/bin:$PATH"
+
+# Added by CatPaw
+export PATH="/Users/young/.catpawai/bin:$PATH"
+
+# Added by Antigravity
+export PATH="/Users/young/.antigravity/antigravity/bin:$PATH"
+
+[[ "$TERM_PROGRAM" == "kiro" ]] && . "$(kiro --locate-shell-integration-path zsh)"
